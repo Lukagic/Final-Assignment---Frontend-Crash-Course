@@ -1,0 +1,136 @@
+.footer {
+	background-color: var(--pure-black);
+	color: var(--text__color__invert);
+}
+
+.newsletter__content p {
+	color: white;
+	line-height: 21px;
+}
+
+.footer__title {
+	color: var(--color-white);
+	font-family: var(--body__type);
+	line-height: 21px;
+	@mixin section-title;
+	font-size: 12px;
+
+	@media (--large) {
+		font-size: 14px;
+	}
+}
+
+.footer__summary-title {
+	letter-spacing: 0.05em;
+	line-height: 24px;
+	margin: 0;
+}
+
+.newsletter__content {
+	background-color: var(--secondary__color);
+	color: var(--text__color);
+	text-align: center;
+	padding-top: pxtorem(21);
+	padding-bottom: pxtorem(21);
+}
+
+.footer .container {
+	padding-top: pxtorem(21);
+	padding-bottom: pxtorem(21);
+}
+
+@media screen and (min-width: 1024px) {
+	.footer .container {
+		padding-top: pxtorem(40);
+	}
+}
+
+.footer__details {
+	margin-bottom: 24px;
+}
+
+.footer__details:last-child {
+	margin-bottom: 0;
+}
+
+.footer__summary {
+	cursor: pointer;
+
+	&:before {
+		@mixin icon-font-display "\e909";
+		float: right;
+		transition: transform 0.25s;
+	}
+}
+
+.footer__details[open] .footer__summary:before {
+	transform: rotate(180deg);
+}
+
+.footer__details[open] .footer__summary {
+	margin-bottom: 12px;
+}
+
+.dialog-content {
+	text-align: left;
+}
+
+@media screen and (min-width: 480px) {
+	.dialog-content {
+		text-align: center;
+	}
+}
+
+.footer__summary-title {
+	line-height: 2;
+}
+
+.summary__content {
+	background-color: var(--primary__color);
+	color: var(--text__color__invert);
+}
+
+.summary__links {
+	text-decoration: none;
+	color: var(--text__color__invert);
+	font-weight: normal;
+	transition: color 0.1s;
+
+	&:hover {
+		color: var(--secondary__color);
+	}
+}
+
+summary {
+	outline: none;
+}
+
+.copyright__text {
+	display: block;
+	line-height: 2;
+	text-align: center;
+	padding-top: pxtorem(9);
+	padding-bottom: pxtorem(9);
+}
+
+form .footer-input {
+	width: 336px;
+	margin-bottom: 12px;
+	height: 42px;
+}
+
+@media screen and (min-width: 480px) {
+	.container {
+		display: flex;
+		justify-content: center;
+		gap: 20%;
+	}
+
+	.footer__summary:before {
+		display: none;
+	}
+
+	.footer__summary-title {
+		text-align: center;
+	}
+}

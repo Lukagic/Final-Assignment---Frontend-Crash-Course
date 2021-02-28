@@ -1,0 +1,125 @@
+$container-width: 1600px;
+$container-gutter: 8px;
+$bp-large: 1024px;
+
+@custom-media --large (min-width: $bp-large);
+
+:root {
+    --blue-color: #12167a;
+    --red-color: #ec1d2e;
+    --neutral-color: #4e4e4e;
+    --gray-color: rgba(207, 207, 207, 1);
+    --pure-black: #000;
+    --white-color: rgba(255, 255, 255, 1);
+
+    /* Primary colors */
+
+    --primary__color: var(--blue-color);
+    --primary-10: #cfcfcf;
+    --primary-20: #d41727;
+    --primary-30: #740d15;
+
+    /* Secondary colors */
+
+    --secondary__color: var(--red-color);
+
+    /* Neutral colors */
+    --text__color: var(--neutral-color);
+    --text__color__invert: #fff;
+
+    /* Components */
+
+    /* Links */
+
+    --link__color: var(--primary__color);
+    --link__visited__color: var(--primary-10);
+    --link__hover__color: var(--primary-20);
+    --link__active__color: var(--primary-30);
+
+    /* Buttons */
+
+    --button-primary__background: var(--primary__color);
+    --button-primary__background--hover: var(--secondary__color);
+
+    --button-secondary__background__border: var(--secondary__color);
+    --button-secondary__background__color: var(--secondary__color);
+
+    /* Headings */
+
+    --headings__type: "Anton", sans-serif;
+    --body__type: "Open Sans", sans-serif;
+
+    /* Text color */
+    --text_color: rgba(78, 78, 78, 1);
+    --text__color__invert: rgba(255, 255, 255, 1);
+    --text__color__intense: rgba(255, 0, 0, 1);
+    --text__color__muted: rgba(207, 207, 207, 1);
+    --link__color: rgba(236, 29, 46, 1);
+    --link__visited__color: rgba(185, 18, 29, 1);
+    --link__hover__color: rgba(212, 23, 39, 1);
+    --link__active__color: rgba(116, 13, 21, 1);
+
+    /* Global Colors */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --success__color: #32d08d;
+    --error__color: #f14f39;
+    --warning__color: #f1b239;
+
+    /* button colors */
+    --button-primary_background: #12167a;
+    --button-secondary__background: #fff;
+    --button-primary__border: #fff;
+    --button-secondary__border: #ec1d2e;
+    --button-primary__color: #fff;
+    --button-secondary__color: #ec1d2e;
+
+    /* input field colors */
+    --input-background-color-default: #fff;
+    --input-background-color-disabled: #e8e8e8;
+    --input-border-color-default: #9c9c9c;
+
+    /* input field border color */
+    --input-border-color-default: rgba(156, 156, 156, 1);
+    --input-border-color-focus: rgba(78, 78, 78, 1);
+    --input-border-color-error: rgba(236, 29, 46, 1);
+
+    /* Search Field Colors */
+    --search-background-color-default: rgba(255, 0, 0, 1);
+
+    /* Input field text colors */
+    --search-placeholder-color: rgba(255, 255, 255, 1);
+
+    /* Search Field Border Colors */
+    --search-border-color-default: rgba(236, 29, 46, 1);
+
+    /* Icons Colors */
+    --icon-regular-color: rgba(78, 78, 78, 1);
+    --icon-dark-bg-color: rgba(255, 255, 255, 1);
+    --icon-indicator-color: rgba(78, 78, 78, 1);
+    --icon-indicator-dark-bg-color: rgba(102, 102, 102, 1);
+    --icon-link: rgba(236, 29, 46, 1);
+
+    /* Star rating color */
+    --star-rating-color-full: rgba(236, 29, 46, 1);
+    --star-rating-color-half: rgba(236, 29, 46, 1), rgba(207, 207, 207, 1),
+        rgba(207, 207, 207, 1);
+    --star-rating-color-default: rgba(207, 207, 207, 1);
+
+    /* Fonts */
+    --font-primary: "Open Sans", sans-serif;
+    --font-secondary: "Anton", sans-serif;
+
+    /* Screen sizes */
+
+    --screen__s: 560px;
+    --screen__m: 768px;
+    --max-site-width: 1600px;
+
+    --gutter__xs: 6px;
+    --gutter__s: 12px;
+    --gutter__m: 24px;
+    --gutter__l: 30px;
+    --gutter__xl: 36px;
+    --gutter__xxl: 48px;
+}
